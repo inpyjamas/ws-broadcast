@@ -1,0 +1,17 @@
+{
+  "name": "as-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "websocket": "../../lib/cli.js -c ./websocket.config.json",
+    "bridge": "../../lib/cli.js -c ./config.json",
+    "default":"../../lib/cli.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bridge": "git+ssh://git@git.ixds.io:node-modules/bridge.git#feature/cli"
+  }
+}

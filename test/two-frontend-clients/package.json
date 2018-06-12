@@ -1,0 +1,17 @@
+{
+  "name": "testing-bridge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "reload": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start":"reload -b -d ./www -p 3003",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}

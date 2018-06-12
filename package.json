@@ -1,0 +1,35 @@
+{
+  "name": "ws-broadcast",
+  "version": "0.1.0",
+  "description": "A simple (zero config) websocket server to be run as cli or as node module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node .",
+    "dev": "DEBUG=websocket nodemon ./lib/index.js",
+    "dev-cli": "DEBUG=websocket nodemon ./lib/cli.js",
+    "dev-cli-fish": "env DEBUG=websocket nodemon ./lib/cli.js"
+  },
+  "author": "Marten Biehl <marten.biehl@ixds.com>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "commander": "^2.15.1",
+    "debug": "^2.6.3",
+    "read-config": "^2.0.0",
+    "ws": "^5.2.0"
+  },
+  "bin": {
+    "ws-broadcast": "./lib/cli.js"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^4.19.1",
+    "eslint-config-unobtrusive": "^1.2.2",
+    "nodemon": "^1.17.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+    "host": "0.0.0.0",
+    "port": 3334,
+    // "backlog":  {Number} The maximum length of the queue of pending connections.,
+    "path": "/",
+    // "noServer": false,
+    // "clientTracking": true,
+    // "perMessageDeflate": false
+    // "maxPayload": {Number} The maximum allowed message size in bytes.
+    "exclusiveBroadcast": false
+}
