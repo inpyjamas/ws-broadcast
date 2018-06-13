@@ -1,16 +1,17 @@
 {
-  "name": "simple-ws-client",
+  "name": "testing-broadcast",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "reload": "^2.3.0"
+  },
+  "devDependencies": {},
   "scripts": {
+    "start":"reload -b -d ./www -p 3003",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.16.3",
-    "ws": "^5.2.0"
-  }
+  "license": "MIT"
 }

@@ -1,5 +1,5 @@
 {
-  "name": "testing-bridge",
+  "name": "frontend-listen",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start":"reload -b -d ./www -p 3003",
+    "start":"reload -b -d ./www -p 3023",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

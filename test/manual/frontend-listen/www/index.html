@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <h1>Client Two</h1>
+  <script>
+
+  const socket = new WebSocket( `ws://${location.hostname}:3334` );
+    socket.onmessage = (message) => {
+      let str = JSON.parse(JSON.stringify(message.data));
+      console.log(str);
+
+      document.write(`${str}<br>`);
+    };
+  </script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-Websocket Bridge Example
+Websocket Broadcast Example
 ========================
 
 
