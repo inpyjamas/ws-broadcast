@@ -1,11 +1,14 @@
 module.exports = {
   extends: [
     'unobtrusive',
-    'eslint:recommended'
+    'eslint:recommended',
+    'plugin:jest/recommended'
   ],
+  plugins: ['jest'],
   env: {
     browser: true,
-    node: true
+    node: true,
+    'jest/globals': true
   },
   globals: {
   },
