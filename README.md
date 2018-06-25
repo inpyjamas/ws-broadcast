@@ -35,7 +35,7 @@ ws-broadcast --help
   Options:
 
     -V, --version          output the version number
-    -c, --config <config>  path to the config.json file
+    -c, --config <config>  path to your config.json file
     -h, --help             output usage information
 ```
 
@@ -63,7 +63,7 @@ In `package.json` you can provide a script like this.
 ```json
 {
   "scripts": {
-    "server": "./node_modules/.bin/ws-broadcast -c \"./path/to/your/config.json\""
+    "ws-server": "./node_modules/.bin/ws-broadcast -c \"./path/to/your/config.json\""
   }
 }
 ```
@@ -73,7 +73,17 @@ Or even shorter:
 ```json
 {
   "scripts": {
-    "server": "ws-broadcast -c \"./path/to/your/config.json\""
+    "ws-server": "ws-broadcast -c \"./path/to/your/config.json\""
+  }
+}
+```
+
+If the default config is fine for you it could also be:
+
+```json
+{
+  "scripts": {
+    "ws-server": "ws-broadcast"
   }
 }
 ```
@@ -94,7 +104,7 @@ const wss = wsBroadcast({
   // perMessageDeflate: false,
 });
 
-// now do aditional things with ws
+// now do additional things with wss
 ```
 
 

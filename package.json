@@ -4,7 +4,7 @@
   "description": "A simple (zero config) websocket server to be run as cli or as node module",
   "main": "lib/index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --detectOpenHandles",
     "start": "node .",
     "dev": "DEBUG=websocket nodemon ./lib/index.js",
     "dev-cli": "DEBUG=websocket nodemon ./lib/cli.js",
