@@ -1,10 +1,11 @@
+![](./docs/images/logo.png)  
+
 Websocket Broadcast (aka ws-broadcast)
 ================================
 
-This module provides a zero config websocket server.
-It can be used as an CLI or as a node module.
+This module provides a zero config (if you want it to) websocket server. It can be used as an CLI or as a node module.
 
-This module is based on internal code used throughout several prototypes we build here at [IXDS](https://www.ixds.com/).
+It is based on code used throughout several prototypes we build here at [IXDS](https://www.ixds.com/).
 
 ## Installation
 
@@ -93,19 +94,46 @@ If the default config is fine for you it could also be:
 ```js
 const {wsBroadcast} = require('ws-broadcast');
 const path = require('path');
-const wss = wsBroadcast({
-  host: '0.0.0.0',
-  port: 3334,
-  path: '/',
-  exclusiveBroadcast: false
-    // backlog: false,
-  // noServer: false,
-  // clientTracking: true,
-  // perMessageDeflate: false,
-});
-
+const wss = wsBroadcast();
 // now do additional things with wss
 ```
+
+With config passed to the module.
+
+```js
+const {wsBroadcast} = require('ws-broadcast');
+const path = require('path');
+const wss = wsBroadcast({port:7777});
+// now do additional things with wss
+```
+
+
+## License
+
+Icon based on broadcast by b farias from the Noun Project
+
+MIT License
+
+Copyright (c) 2018 IXDS
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
 
 
 
