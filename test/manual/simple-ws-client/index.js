@@ -1,5 +1,5 @@
 const WebSocket = require('ws');
-const app = require('express')();
+const http = require('http');
 const ws = new WebSocket('ws://localhost:3334');
 let isconnected = false;
 ws.on('open', function open() {
@@ -13,10 +13,14 @@ ws.on('message', function incoming(data) {
 
 const interval = setInterval(()=>{
   if(isconnected) {
-    ws.send('ping');
+    ws.send('ping',{mask:false}, ()=>{
+      // console.log('cb')
+    });
   }
 }, 1000);
-app.listen(3002, ()=>{
-  console.log('listen on 3002');
-
-});
+  http.createServer(function (req, res) {
+    res.writeHead(200, {'Content-Type': 'text/plain'});
+    res.write('Hello World');
+    res.end();
+  }).listen(3002);
+    console.log('listen on 3002');
