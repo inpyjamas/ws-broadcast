@@ -59,3 +59,12 @@ typings/
 
 # next.js build output
 .next
+
+######
+# contains some testing clutter that is not needed in the module
+private/*
+
+######
+# Some more private files
+.DS_Store
+.vscode/*
