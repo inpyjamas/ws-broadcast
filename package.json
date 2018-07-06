@@ -21,6 +21,7 @@
   "dependencies": {
     "commander": "^2.15.1",
     "debug": "^2.6.3",
+    "lodash.merge": "^4.6.1",
     "read-config": "^2.0.0",
     "ws": "^5.2.0"
   },
