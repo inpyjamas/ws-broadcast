@@ -46,12 +46,12 @@ If no config file is provided it will use the default configuration.
 {
     "host": "0.0.0.0",
     "port": 3334,
-    // "backlog":  {Number} The maximum length of the queue of pending connections.,
-    "path": "/",
-    // "noServer": false,
-    // "clientTracking": true,
-    // "perMessageDeflate": false
-    // "maxPayload": {Number} The maximum allowed message size in bytes.
+    "backlog": null,
+    "path": null,
+    "noServer": false,
+    "clientTracking": true,
+    "perMessageDeflate": false,
+    "maxPayload": 104857600,
     "exclusiveBroadcast": false
 }
 
