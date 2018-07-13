@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "jest --detectOpenHandles",
+    "test:manual-module": "node --inspect ./test/manual/as-module/index.js",
     "start": "node .",
     "dev": "DEBUG=websocket nodemon ./lib/index.js",
     "dev-cli": "DEBUG=websocket nodemon ./lib/cli.js",
@@ -30,7 +31,7 @@
   },
   "devDependencies": {
     "cz-conventional-changelog": "^2.1.0",
-    "eslint": "^4.19.1",
+    "eslint": "^5.1.0",
     "eslint-config-unobtrusive": "^1.2.2",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-jest": "^21.17.0",
