@@ -23,7 +23,8 @@ module.exports = {
       'keyword-spacing': [2],
       'eol-last': [2],
       'no-trailing-spaces': [2],
-      'no-process-env': ['off', 'always']
+      'no-process-env': ['off', 'always'],
+      'no-console': ['off','always']
     }
   };
   
