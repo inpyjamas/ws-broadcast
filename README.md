@@ -92,20 +92,19 @@ If the default config is fine for you it could also be:
 ## Usage as Module
 
 ```js
-const {wsBroadcast} = require('ws-broadcast');
-const path = require('path');
-const wss = wsBroadcast();
+const {broadcast} = require('ws-broadcast');
+const wss = broadcast();
 // now do additional things with wss
 ```
 
 With config passed to the module.
 
 ```js
-const {wsBroadcast} = require('ws-broadcast');
-const path = require('path');
-const wss = wsBroadcast({port:7777});
+const {broadcast} = require('ws-broadcast');
+const wss = broadcast({port:7777});
 // now do additional things with wss
 ```
+
 
 
 ## License
