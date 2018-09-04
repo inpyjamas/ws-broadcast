@@ -12,7 +12,7 @@
     "dev-cli-fish": "env DEBUG=websocket nodemon ./lib/cli.js"
   },
   "contributors": [
-    "Constantin Schmidt <constantin.schmidt@ixds.com>",
+    "Constantin Wolf <constantin.wolf@ixds.com>",
     "Fabian Morón Zirfas <fabian.moron-zirfas@ixds.com>",
     "Fabian Opitz <fabian.opitz@ixds.com>",
     "Marten Biehl <marten.biehl@ixds.com>",
