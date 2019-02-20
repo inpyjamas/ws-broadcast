@@ -1,6 +1,6 @@
 {
   "name": "@ixds/ws-broadcast",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A simple (zero config) websocket server to be run as cli or as node module",
   "main": "lib/index.js",
   "scripts": {
