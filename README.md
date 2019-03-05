@@ -1,7 +1,8 @@
-![](./docs/images/logo.png)  
+![](./docs/images/logo.png)
 
-Websocket Broadcast (aka ws-broadcast)
-================================
+# Websocket Broadcast (aka ws-broadcast)
+
+[![Build Status](https://travis-ci.org/ixds/ws-broadcast.svg?branch=master)](https://travis-ci.org/ixds/ws-broadcast)
 
 This module provides a zero config (if you want it to) websocket server. It can be used as an CLI or as a node module.
 
