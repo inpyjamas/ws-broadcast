@@ -22,10 +22,9 @@ Or as global cli (not recommended):
 npm install -g @ixds/ws-broadcast
 ```
 
-
 ## Usage CLI
 
-You can run this as a CLI in package.json or as a global tool
+You can run this as a CLI in `package.json` or as a global tool
 
 In the shell:
 
