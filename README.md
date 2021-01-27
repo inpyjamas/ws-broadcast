@@ -2,24 +2,26 @@
 
 # Websocket Broadcast (aka ws-broadcast)
 
-[![Build Status](https://travis-ci.org/ixds/ws-broadcast.svg?branch=master)](https://travis-ci.org/ixds/ws-broadcast)
-
 This module provides a zero config (if you want it to) websocket server. It can be used as an CLI or as a node module.
+It is based on code used throughout several prototypes build at [IXDS](https://www.ixds.com/). Thanks to the contributions of:
 
-It is based on code used throughout several prototypes we build here at [IXDS](https://www.ixds.com/).
+- Constantin Wolf
+- Fabian Opitz
+- Marten Biehl
+- Thomas Geissl
 
 ## Installation
 
 install it like this:
 
 ```shell
-npm install @ixds/ws-broadcast
+npm install @inpyjamas/ws-broadcast
 ```
 
 Or as global cli (not recommended):
 
 ```shell
-npm install -g @ixds/ws-broadcast
+npm install -g @inpyjamas/ws-broadcast
 ```
 
 ## Usage CLI
@@ -113,7 +115,7 @@ Icon based on broadcast by b farias from the Noun Project
 
 MIT License
 
-Copyright (c) 2018 IXDS
+Copyright (c) 2021 Fabian Morón Zirfas
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
