@@ -1,6 +1,6 @@
 {
   "name": "@inpyjamas/ws-broadcast",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A simple (zero config) websocket server to be run as cli or as node module",
   "main": "lib/index.js",
   "scripts": {
