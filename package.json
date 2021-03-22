@@ -24,7 +24,7 @@
     "debug": "^4.1.1",
     "lodash.merge": "^4.6.1",
     "read-config": "^2.0.0",
-    "ws": "^6.1.4"
+    "ws": "^7.0.0"
   },
   "bin": {
     "ws-broadcast": "./lib/cli.js"
